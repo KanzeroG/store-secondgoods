@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Goods Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <h1 class="logo">
+                <img src="img/icon.webp" alt="SecondGoods Logo" class="logo-icon">
+                SecondGoods
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#featured-products">Featured</a></li>
+                    <li><a href="#product-list">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#send-goods">Send Goods</a></li>
+                    <li><a href="#our-location">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url('img/background1.jpg');">
+        <div class="container">
+            <h2>Buy & Sell Quality Secondhand Goods</h2>
+            <p>Find great deals, declutter, and make sustainability easy at SecondGoods. Join the movement today!</p>
+            <a href="#product-list" class="cta-button">Browse Products</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to SecondGoods, your trusted marketplace for buying and selling quality secondhand goods. Located at President University, we aim to promote sustainability by giving pre-loved items a new life. Join us in creating a sustainable future, one transaction at a time!</p>
+        </section>
+
+        <section id="featured-products" class="featured-section">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product" data-id="1" data-price="100000">
+                    <img src="featured1.jpg" alt="Featured Item 1">
+                    <h3>Featured Item 1</h3>
+                    <p>Top-rated item description.</p>
+                    <p class="price">Price: Rp 100,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-price="150000">
+                    <img src="featured2.jpg" alt="Featured Item 2">
+                    <h3>Featured Item 2</h3>
+                    <p>Top-rated item description.</p>
+                    <p class="price">Price: Rp 150,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-list" class="product-section">
+            <h2>Products</h2>
+            <div class="product-grid">
+                <div class="product" data-id="3" data-price="200000">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Product description.</p>
+                    <p class="price">Price: Rp 200,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <div class="input-icon">
+                <img src="img/icon.webp" alt="Phone Icon" class="input-icon-img">
+                <input type="tel" id="phone" placeholder="Phone Number (+62)" pattern="^\+62[0-9]{9,}$" required>
+            </div>
+            <div class="cart-summary">
+                <p>Total: Rp <span id="cart-total">0.00</span></p>
+                <button id="checkout" class="checkout-button">Checkout</button>
+            </div>
+        </section>
+
+        <section id="send-goods" class="send-section">
+            <h2>Send Your Goods</h2>
+            <form id="send-goods-form" class="goods-form">
+                <input type="text" id="send-name" placeholder="Name" required>
+                <input type="email" id="send-email" placeholder="Email" required>
+                <input type="text" id="send-location" placeholder="Location" required>
+                <button type="submit" class="submit-button">Send Goods</button>
+            </form>
+        </section>
+
+        <section id="our-location" class="location-section">
+            <h2>Our Location</h2>
+            <p>Find us at President University. Stay connected with us through our contact options below.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#featured-products">Featured</a></li>
+                        <li><a href="#product-list">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@secondgoods.com</p>
+                    <p>Phone: +62-123-4567</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="img/icon1.png" alt="Facebook" class="social-icon"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="img/icon2.png" alt="Twitter" class="social-icon"></a>
+                        <a href="https://instagram.com" target="_blank"><img src="img/icon3.webp" alt="Instagram" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 SecondGoods. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="loading-spinner" class="loading-spinner">Loading...</div>
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
